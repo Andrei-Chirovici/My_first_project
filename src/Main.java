@@ -39,7 +39,7 @@ public class Main {
         Label label = new Label();
         label.setText("Welcome to the Login Portal");
         label.setId(fancytext);
-        
+
         #fancytext {
         -fx-font: 100px Tahoma;
         -fx-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, aqua 0%, red 50%);
