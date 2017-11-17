@@ -1,6 +1,14 @@
-#fancytext {
+#headertext {
     -fx-font: 40px Tahoma;
-    -fx-fill: linear-gradient(from 0% 0% to 100% 200%, aqua 0%, red 50%);
-    -fx-stroke: blue;
-    -fx-stroke-width: 20px;
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, aqua 0%, red 50%);
+    -fx-border-color: blue;
+    -fx-border-radius: 1000px;
+    -fx-border-width: 7px;
+    -fx-padding: 10px;
+
+}
+
+#signup_header_text {
+    -fx-font: 40px Tahoma;
+
 }
