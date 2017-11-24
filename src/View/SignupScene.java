@@ -17,7 +17,7 @@ public class SignupScene {
         SignupController controller = new SignupController();
 
         Pane rootPane = new Pane();
-        Scene scene = new Scene(rootPane, 800, 600);
+        Scene scene = new Scene(rootPane, 700, 600);
         scene.getStylesheets().add("style.css");
 
         Label label = new Label();
