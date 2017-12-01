@@ -84,6 +84,7 @@ public class LoginScene {
         btn2.setPrefWidth(70);
         btn2.setPrefHeight(35);
         btn2.setOnAction((ae) -> controller.openMainMenu(stage));
+
         rootPane.getChildren().add(btn2);
 
         return scene;

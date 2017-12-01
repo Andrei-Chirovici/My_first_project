@@ -17,7 +17,7 @@ public class SignupScene {
         SignupController controller = new SignupController();
 
         Pane rootPane = new Pane();
-        Scene scene = new Scene(rootPane, 700, 600);
+        Scene scene = new Scene(rootPane, 710, 600);
         scene.getStylesheets().add("style.css");
 
         Label label = new Label();
@@ -29,7 +29,7 @@ public class SignupScene {
 
         // Username TextField Settings //
         TextField txtfield = new TextField();
-        txtfield.setLayoutX(170);
+        txtfield.setLayoutX(190);
         txtfield.setLayoutY(150);
         txtfield.setPrefWidth(300);
         txtfield.setPrefHeight(30);
@@ -38,31 +38,42 @@ public class SignupScene {
 
         // Password Box Settings
         PasswordField passfield = new PasswordField();
-        passfield.setLayoutX(170);
+        passfield.setLayoutX(190);
         passfield.setLayoutY(200);
         passfield.setPrefWidth(300);
         passfield.setPrefHeight(30);
         passfield.setPromptText("Password");
         rootPane.getChildren().add(passfield);
 
-        // Password Confirm-Box Settings
+        // Password (Confirm-Box) Settings
         PasswordField passfield1 = new PasswordField();
-        passfield.setLayoutX(170);
-        passfield.setLayoutY(250);
-        passfield.setPrefWidth(300);
-        passfield.setPrefHeight(30);
-        passfield.setPromptText("Please re-enter password");
+        passfield1.setLayoutX(190);
+        passfield1.setLayoutY(250);
+        passfield1.setPrefWidth(300);
+        passfield1.setPrefHeight(30);
+        passfield1.setPromptText("Please re-enter password");
         rootPane.getChildren().add(passfield1);
 
-        // Button Settings //
+        // REGISTER - Button Settings //
         Button btn = new Button();
         btn.setText("Register");
-        btn.setLayoutX(170);
+        btn.setLayoutX(280);
         btn.setLayoutY(300);
-        btn.setPrefWidth(60);
-        btn.setPrefHeight(30);
-        btn.setOnAction((ae) -> controller.doValidation());
+        btn.setPrefWidth(70);
+        btn.setPrefHeight(35);
+        btn.setOnAction((ae) -> controller.doValidation(btn, stage));
         rootPane.getChildren().add(btn);
+
+
+        // BACK - Button Settings //
+        Button backBtn = new Button();
+        backBtn.setText("Back");
+        backBtn.setLayoutX(190);
+        backBtn.setLayoutY(300);
+        backBtn.setPrefWidth(70);
+        backBtn.setPrefHeight(35);
+        backBtn.setOnAction((ae) -> controller.doValidation(backBtn, stage));
+        rootPane.getChildren().add(backBtn);
 
         return scene;
     }
