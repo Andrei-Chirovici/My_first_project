@@ -8,6 +8,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
+
+
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -83,8 +85,7 @@ public class LoginScene {
         btn2.setLayoutY(242);
         btn2.setPrefWidth(70);
         btn2.setPrefHeight(35);
-        btn2.setOnAction((ae) -> controller.openMainMenu(stage));
-
+        btn2.setOnAction((ae) -> controller.openMainMenu(txtfield, passfield, stage));
         rootPane.getChildren().add(btn2);
 
         return scene;

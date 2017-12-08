@@ -61,7 +61,7 @@ public class SignupScene {
         btn.setLayoutY(300);
         btn.setPrefWidth(70);
         btn.setPrefHeight(35);
-        btn.setOnAction((ae) -> controller.doValidation(btn, stage));
+        btn.setOnAction((ae) -> controller.doValidation(btn, stage, passfield, passfield1, txtfield));
         rootPane.getChildren().add(btn);
 
 
