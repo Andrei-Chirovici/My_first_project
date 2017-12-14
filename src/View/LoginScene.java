@@ -50,13 +50,13 @@ public class LoginScene {
         rootPane.getChildren().add(label1);
 
         // Username TextField Settings //
-        TextField txtfield = new TextField();
-        txtfield.setLayoutX(190);
-        txtfield.setLayoutY(150);
-        txtfield.setPrefWidth(300);
-        txtfield.setPrefHeight(30);
-        txtfield.setPromptText("Username");
-        rootPane.getChildren().add(txtfield);
+        TextField username = new TextField();
+        username.setLayoutX(190);
+        username.setLayoutY(150);
+        username.setPrefWidth(300);
+        username.setPrefHeight(30);
+        username.setPromptText("Username");
+        rootPane.getChildren().add(username);
 
         // Password Box Settings
         PasswordField passfield = new PasswordField();
@@ -85,7 +85,7 @@ public class LoginScene {
         btn2.setLayoutY(242);
         btn2.setPrefWidth(70);
         btn2.setPrefHeight(35);
-        btn2.setOnAction((ae) -> controller.openMainMenu(txtfield, passfield, stage));
+        btn2.setOnAction((ae) -> controller.openMainMenu(username, passfield, stage));
         rootPane.getChildren().add(btn2);
 
         return scene;

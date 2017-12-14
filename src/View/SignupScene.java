@@ -61,7 +61,7 @@ public class SignupScene {
         btn.setLayoutY(300);
         btn.setPrefWidth(70);
         btn.setPrefHeight(35);
-        btn.setOnAction((ae) -> controller.doValidation(btn, stage, passfield, passfield1, txtfield));
+        btn.setOnAction((ae) -> controller.setRegisterBtn(btn, stage, passfield, passfield1, txtfield));
         rootPane.getChildren().add(btn);
 
 
@@ -72,7 +72,7 @@ public class SignupScene {
         backBtn.setLayoutY(300);
         backBtn.setPrefWidth(70);
         backBtn.setPrefHeight(35);
-        backBtn.setOnAction((ae) -> controller.doValidation(backBtn, stage));
+        backBtn.setOnAction((ae) -> controller.setBackBtn(backBtn, stage));
         rootPane.getChildren().add(backBtn);
 
         return scene;

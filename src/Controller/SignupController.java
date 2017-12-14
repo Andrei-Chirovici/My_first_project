@@ -7,24 +7,34 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
 
+import java.sql.SQLInput;
+
 public class SignupController {
 
     public SignupController() {
     }
 
-    public void doValidation(Button btn, Stage stage, PasswordField passfield, PasswordField passfield1, TextField txtfield) {
+    public void setBackBtn(Button backBtn, Stage stage) {
 
-        System.out.println("DO VALIDATION!");
-
-        if(btn.getText()=="Back") {
+        if (backBtn.getText() == "Back") {
             System.out.println("Back button selected");
             stage.setScene(LoginScene.createScene(stage));
         }
+    }
 
-        if(passfield.getText() != passfield1.getText()) {
-                System.out.println("Passwords do not match");
+    public void setRegisterBtn(Button btn, Stage stage, PasswordField passfield, PasswordField passfield1, TextField username) {
+
+        if (passfield.getText() != passfield1.getText()) {
+            System.out.println("Passwords do not match");
+
+
         }
+
+
 
     }
 
+
+
 }
+
