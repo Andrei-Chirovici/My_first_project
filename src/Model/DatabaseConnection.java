@@ -20,7 +20,7 @@ public class DatabaseConnection {
         }
         catch (ClassNotFoundException exception)
         {
-            System.out.println("Class not found exception: " + exception.getMessage());
+            System.out.println("Class not found exception: " + exception.getMessage()) ;
         }
         catch (SQLException exception)
         {
