@@ -1,4 +1,4 @@
-#headertext {
+#login_header_text {
     -fx-font: 40px Tahoma;
     -fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, aqua 0%, red 50%);
     -fx-border-color: blue;
@@ -8,11 +8,17 @@
 
 }
 
-#signup_header_text {
-    -fx-font: 40px Tahoma;
+#program_header_text {
+    -fx-font: 30px Tahoma;
+    -fx-text-fill: darkblue;
 
 }
 
 #standard_text {
     -fx-font: 20px Tahoma;
+}
+
+#copyright_text {
+    -fx-font: 12px Tahoma;
+
 }

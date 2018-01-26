@@ -26,7 +26,7 @@ public class LoginScene {
         // Label (Header) //
         Label label = new Label();
         label.setText("Welcome to the Login Portal");
-        label.setId("headertext");
+        label.setId("login_header_text");
         label.setLayoutX(80);
         label.setLayoutY(10);
         rootPane.getChildren().add(label);
@@ -48,6 +48,14 @@ public class LoginScene {
         label1.setLayoutX(190);
         label1.setLayoutY(310);
         rootPane.getChildren().add(label1);
+
+        // Label (Copyright) //
+        Label label_c = new Label();
+        label_c.setText("© Picture Suite by Andrei / Copyright 2018");
+        label_c.setId("copyright_text");
+        label_c.setLayoutX(475);
+        label_c.setLayoutY(580);
+        rootPane.getChildren().add(label_c);
 
         // Username TextField Settings //
         TextField username = new TextField();
@@ -85,7 +93,7 @@ public class LoginScene {
         btn2.setLayoutY(242);
         btn2.setPrefWidth(70);
         btn2.setPrefHeight(35);
-        btn2.setOnAction((ae) -> controller.openMainMenu(username, passfield, stage));
+        btn2.setOnAction((ae) -> controller.openMainMenu(username.getText(), passfield.getText(), stage));
         rootPane.getChildren().add(btn2);
 
         return scene;

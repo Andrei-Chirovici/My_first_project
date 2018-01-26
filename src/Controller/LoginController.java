@@ -24,33 +24,19 @@ public class LoginController {
 
     }
 
-    public void openMainMenu(TextField username, PasswordField passfield, Stage stage) {
+    public void openMainMenu(String username, String passfield, Stage stage) {
 
+        String user = "admin";
+        String pass = "admin";
 
-
-        boolean user = false;
-        boolean pass = false;
-
-        if(username.getText() == Username) {
-            user = true;
-        }
-
-        if(passfield.getText() == Password) {
-            pass = true;
-        }
-
-        //username.getText() == Username && passfield.getText() == Password
-        if (user && pass) {
+        if (user .equals(username) && pass .equals(passfield)) {
             System.out.println("Username and Password correct.");
             Scene programScene = ProgramScene.createScene(stage);
             stage.setScene(programScene);
         } else {
             System.out.println("Incorrect");
-            System.out.println(pass);
-            System.out.println(user);
 
         }
-
 
 
         // Hash Password
