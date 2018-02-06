@@ -44,25 +44,36 @@ public class ProgramScene {
         rootPane.getChildren().add(backBtn);
 
 
-        // Upload Image //
+        // Upload Image Button //
         Button btn_upload = new Button();
-        btn_upload.setText("Register");
-        btn_upload.setLayoutX(80);
-        btn_upload.setLayoutY(310);
-        btn_upload.setPrefWidth(70);
-        btn_upload.setPrefHeight(35);
+        btn_upload.setText("Upload");
+        btn_upload.setLayoutX(20);
+        btn_upload.setLayoutY(290);
+        btn_upload.setPrefWidth(100);
+        btn_upload.setPrefHeight(75);
        // btn.setOnAction((ae) ->
         rootPane.getChildren().add(btn_upload);
 
-        // View Image Portfolio //
+        // View Image Portfolio Button //
         Button btn_portfolio = new Button();
-        btn_portfolio.setText("Register");
-        btn_portfolio.setLayoutX(80);
-        btn_portfolio.setLayoutY(310);
-        btn_portfolio.setPrefWidth(70);
-        btn_portfolio.setPrefHeight(35);
-        // btn.setOnAction((ae) ->
+        btn_portfolio.setText("View Images");
+        btn_portfolio.setLayoutX(150);
+        btn_portfolio.setLayoutY(290);
+        btn_portfolio.setPrefWidth(130);
+        btn_portfolio.setPrefHeight(75);
+       // btn.setOnAction((ae) -> controller.viewImages();
         rootPane.getChildren().add(btn_portfolio);
+
+
+        // Settings Button //
+        Button btn_settings = new Button();
+        btn_settings.setText("Settings");
+        btn_settings.setLayoutX(450);
+        btn_settings.setLayoutY(290);
+        btn_settings.setPrefWidth(100);
+        btn_settings.setPrefHeight(75);
+        // btn.setOnAction((ae) ->
+        rootPane.getChildren().add(btn_settings);
 
         return scene;
     }
